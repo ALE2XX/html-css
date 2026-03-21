@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas     absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+            /* lighter, normal, bold, bolder*/
+
+        }
+
+        h1 {
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis facere, expedita minus obcaecati blanditiis cumque natus asperiores dolor dolore repudiandae eum doloremque rerum explicabo, odio consectetur labore repellendus ipsum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus eligendi ut, quasi nihil tenetur repellendus totam dolor maxime quo placeat provident blanditiis porro quaerat eius doloribus perspiciatis alias modi! Quod.</p> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugiat minima voluptate, pariatur laborum recusandae optio quas dolore. Voluptates, dignissimos. Officia, hic? Vel tempora ab repellendus alias libero, enim repudiandae!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla vitae aliquam aut architecto nam? Recusandae ipsum deleniti amet nihil accusantium quisquam, officia dolor error quasi magnam facilis expedita vitae impedit.</p>
+</body>
+</html>
