@@ -14,9 +14,20 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
 
         td, th {
@@ -40,6 +51,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -48,10 +60,11 @@
                 TR, TD, TH-->
 
 <table>
+    <caption>População dos Estados Brasileiros</caption> 
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </tr>
     </thead>
     <tbody>
@@ -162,7 +175,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="especial"><strong>213 421 037</strong></td>
         </tr>
     </tfoot>
